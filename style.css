@@ -35,33 +35,41 @@ h2 {
     border-top: 5px solid #27ae60; /* Detalle en verde (veterinaria) */
 }
 
-.boton-wa {
+/* --- BOTÓN DE WHATSAPP VERDE --- */
+.btn-contacto {
     display: inline-block;
-    background-color: #25d366;
+    background-color: #25d366; /* El verde original de WhatsApp */
     color: white;
     padding: 15px 25px;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
-/* --- NUEVOS ESTILOS PROFESIONALES --- */
+.btn-contacto:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
 
+/* --- SECCIÓN DE CONTACTO Y PIE DE PÁGINA --- */
 .contacto {
-    background-color: #f8f9fa; /* Gris claro profesional */
+    background-color: #f8f9fa; 
     padding: 50px 20px;
     text-align: center;
     font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 .contacto h2 {
-    color: #1a2a3a; /* Azul marino de tu logo */
+    color: #1a2a3a; 
     margin-bottom: 15px;
 }
 
 footer {
-    background-color: #1a2a3a; /* Azul marino para cerrar con fuerza */
+    background-color: #1a2a3a; /* Azul marino de tu logo */
     color: white;
     padding: 30px 10px;
     text-align: center;
