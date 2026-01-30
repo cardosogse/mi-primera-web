@@ -1,4 +1,4 @@
-/* --- CONFIGURACIÓN GLOBAL --- */
+/* --- ESTILO GLOBAL --- */
 body {
     font-family: 'Outfit', sans-serif;
     margin: 0;
@@ -8,12 +8,12 @@ body {
     line-height: 1.6;
 }
 
-/* --- ENCABEZADO Y PIE (AZUL MARINO) --- */
+/* --- HEADER Y FOOTER (AZUL MARINO UNAM) --- */
 header, footer {
-    background-color: #1a2a3a; /* Azul marino de tu logo */
+    background-color: #1a2a3a;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 65px 20px;
 }
 
 .logo-principal {
@@ -26,8 +26,8 @@ header, footer {
 }
 
 h1 {
-    font-family: 'Bebas Neue', sans-serif; /* Tu tipografía de impacto */
-    font-size: 4.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.8rem;
     margin: 0;
     letter-spacing: 2px;
 }
@@ -35,60 +35,56 @@ h1 {
 .subtitulo { color: #94a3b8; font-style: italic; font-size: 1.2rem; }
 .tagline { font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
 
-/* --- TARJETAS DE SERVICIOS --- */
+/* --- SERVICIOS --- */
 .servicios {
-    padding: 50px 20px;
-    max-width: 800px;
+    padding: 60px 20px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
 .tarjeta {
     background: white;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 20px 0;
-    border-top: 6px solid #27ae60; /* Verde biológico UNAM */
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border-radius: 18px;
+    padding: 35px;
+    margin: 25px 0;
+    border-top: 6px solid #27ae60;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
-/* --- BOTÓN YOUTUBE (ROJO OFICIAL) --- */
+/* --- BOTONES --- */
 .btn-youtube {
     display: inline-block;
     background-color: #FF0000;
     color: white;
-    padding: 12px 25px;
+    padding: 12px 28px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
     margin-top: 15px;
     transition: background 0.3s;
 }
 
-.btn-youtube:hover { background-color: #cc0000; }
-
-/* --- BOTÓN WHATSAPP (VERDE RADIANTE) --- */
-.contacto {
-    background-color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
 .btn-radiante {
     display: inline-block;
-    background-color: #00e676; /* Verde radiante intenso */
+    background-color: #00e676; /* Verde Radiante */
     color: white;
-    padding: 18px 45px;
+    padding: 20px 50px;
     text-decoration: none;
-    border-radius: 50px; /* Forma de píldora */
+    border-radius: 50px;
     font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 0 0 20px rgba(0, 230, 118, 0.5); /* Brillo radiante */
+    font-size: 1.3rem;
+    box-shadow: 0 0 25px rgba(0, 230, 118, 0.5);
     transition: all 0.3s ease;
 }
 
 .btn-radiante:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 230, 118, 0.8);
-    background-color: #00c853;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 230, 118, 0.8);
+}
+
+.contacto {
+    background-color: white;
+    padding: 90px 20px;
+    text-align: center;
 }
