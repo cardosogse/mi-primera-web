@@ -45,3 +45,31 @@ h2 {
     font-weight: bold;
     margin-top: 20px;
 }
+
+/* --- NUEVOS ESTILOS PROFESIONALES --- */
+
+.contacto {
+    background-color: #f8f9fa; /* Gris claro profesional */
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.contacto h2 {
+    color: #1a2a3a; /* Azul marino de tu logo */
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #1a2a3a; /* Azul marino para cerrar con fuerza */
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+    letter-spacing: 0.5px;
+}
