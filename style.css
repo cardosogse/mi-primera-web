@@ -1,4 +1,4 @@
-/* --- ESTILO GLOBAL --- */
+/* --- CONFIGURACIÓN GLOBAL --- */
 body {
     font-family: 'Outfit', sans-serif;
     margin: 0;
@@ -8,36 +8,37 @@ body {
     line-height: 1.6;
 }
 
-/* --- HEADER Y FOOTER (AZUL MARINO UNAM) --- */
+/* --- HEADER Y FOOTER (AZUL MARINO PROFESIONAL) --- */
 header, footer {
     background-color: #1a2a3a;
     color: white;
     text-align: center;
-    padding: 65px 20px;
+    padding: 70px 20px;
 }
 
 .logo-principal {
-    width: 140px;
-    height: 140px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
-    border: 4px solid rgba(255,255,255,0.1);
+    border: 4px solid rgba(255,255,255,0.2);
     margin-bottom: 20px;
     object-fit: cover;
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4.8rem;
+    font-size: 5rem;
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    line-height: 1;
 }
 
-.subtitulo { color: #94a3b8; font-style: italic; font-size: 1.2rem; }
-.tagline { font-weight: 700; text-transform: uppercase; font-size: 0.9rem; }
+.subtitulo { color: #94a3b8; font-style: italic; font-size: 1.3rem; margin-top: 15px; }
+.tagline { font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1.5px; margin-top: 15px; }
 
-/* --- SERVICIOS --- */
+/* --- SECCIÓN SERVICIOS --- */
 .servicios {
-    padding: 60px 20px;
+    padding: 80px 20px;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
@@ -45,23 +46,26 @@ h1 {
 
 .tarjeta {
     background: white;
-    border-radius: 18px;
-    padding: 35px;
-    margin: 25px 0;
-    border-top: 6px solid #27ae60;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px 0;
+    border-top: 8px solid #27ae60; /* Verde Biología */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
 }
+
+.tarjeta h3 { color: #1a2a3a; margin-top: 0; font-size: 1.8rem; font-family: 'Outfit', sans-serif; }
+.tarjeta p { color: #475569; font-size: 1.1rem; }
 
 /* --- BOTONES --- */
 .btn-youtube {
     display: inline-block;
     background-color: #FF0000;
     color: white;
-    padding: 12px 28px;
+    padding: 14px 30px;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: background 0.3s;
 }
 
@@ -69,22 +73,23 @@ h1 {
     display: inline-block;
     background-color: #00e676; /* Verde Radiante */
     color: white;
-    padding: 20px 50px;
+    padding: 22px 55px;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    font-size: 1.3rem;
-    box-shadow: 0 0 25px rgba(0, 230, 118, 0.5);
-    transition: all 0.3s ease;
+    font-size: 1.4rem;
+    box-shadow: 0 0 25px rgba(0, 230, 118, 0.5); /* Brillo radiante */
+    transition: all 0.4s ease;
 }
 
 .btn-radiante:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 0 35px rgba(0, 230, 118, 0.8);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 40px rgba(0, 230, 118, 0.8);
+    background-color: #00c853;
 }
 
 .contacto {
     background-color: white;
-    padding: 90px 20px;
+    padding: 100px 20px;
     text-align: center;
 }
