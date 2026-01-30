@@ -1,105 +1,44 @@
-/* --- CONFIGURACIÓN GENERAL --- */
+/* --- ESTILO PROFESIONAL ANIMALMENTETV --- */
 body {
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
+    background-color: #f8fafc;
 }
 
-/* --- ENCABEZADO (AZUL MARINO UNIFICADO) --- */
-header {
-    background-color: #1a2a3a; /* El azul marino de tu logo */
+/* Header y Footer unificados con tu azul marino profesional */
+header, footer {
+    background-color: #1a2a3a; 
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
+.logo-superior {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.1);
+    margin-bottom: 15px;
+}
+
+/* Tipografía de impacto para el nombre de tu marca */
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
     margin: 0;
-    letter-spacing: -1px;
-    text-transform: lowercase; /* Look moderno para animalmentetv */
+    letter-spacing: 2px;
 }
 
-header p {
-    font-style: italic;
-    color: #cbd5e0;
-}
+.subtitulo { color: #94a3b8; font-style: italic; margin-top: 5px; }
+.profesion { font-weight: 700; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
 
-/* --- TARJETAS DE SERVICIOS --- */
-.servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-.tarjeta {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 15px;
-    padding: 25px;
-    max-width: 450px;
-    border-top: 5px solid #27ae60; /* Mantenemos tu toque verde biológico */
-}
-
-/* --- BOTÓN WHATSAPP VERDE --- */
+/* Botón de WhatsApp Verde */
 .btn-contacto {
     display: inline-block;
     background-color: #25d366;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 35px;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    margin-top: 25px;
-    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-    transition: transform 0.2s;
-}
-
-.btn-contacto:hover {
-    transform: scale(1.05);
-}
-
-/* --- PIE DE PÁGINA PROFESIONAL --- */
-.contacto {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: #1a2a3a; /* Azul idéntico al header */
-    color: white;
-    padding: 30px;
-    text-align: center;
-    font-size: 0.9rem;
-}
-    background-color: #f8f9fa; 
-    padding: 50px 20px;
-    text-align: center;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-}
-
-.contacto h2 {
-    color: #1a2a3a; 
-    margin-bottom: 15px;
-}
-
-footer {
-    background-color: #1a2a3a; /* Azul marino de tu logo */
-    color: white;
-    padding: 30px 10px;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 5px 0;
-    letter-spacing: 0.5px;
+    margin-top: 20px;
 }
