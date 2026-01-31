@@ -1,7 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; overflow-x: hidden; }
 
-/* --- HEADER Y LOGO --- */
+/* --- HEADER Y LOGO BIO-TECH --- */
 .main-header, .header-blog { background: #1a2a3a; color: white; text-align: center; padding: 40px 20px; position: relative; }
 
 .logo-text { font-size: 2.6rem; letter-spacing: -1.5px; text-transform: lowercase; margin-bottom: 5px; }
@@ -17,15 +17,19 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; o
 .nav-blog { position: absolute; left: 15px; top: 15px; }
 .btn-naranja { background: #f59e0b; color: #1a2a3a; padding: 6px 12px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.75rem; box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2); }
 
-/* --- GRID Y TARJETAS --- */
+/* --- GRID Y NUEVAS TARJETAS DE COLOR --- */
 .grid-servicios, .lectura { max-width: 450px; margin: 20px auto; padding: 0 15px; }
 .card, .post-completo { background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
 
-.card-verde { border-top: 8px solid #27ae60; }
-.card-azul { border-top: 8px solid #3498db; }
-.card-roja { border-top: 8px solid #c0392b; }
+/* Asignación de Colores por Categoría */
+.card-lagomorfos { border-top: 8px solid #27ae60; } /* Verde Esmeralda */
+.card-bioterio { border-top: 8px solid #16a085; }   /* Turquesa Laboratorio */
+.card-etologia { border-top: 8px solid #1b5e20; }   /* Verde Bosque */
+.card-cursos { border-top: 8px solid #f39c12; }     /* Ámbar Académico */
+.card-azul { border-top: 8px solid #3498db; }       /* Azul Bitácora */
+.card-roja { border-top: 8px solid #c0392b; }       /* Rojo YouTube */
 
-/* --- BOTONES --- */
+/* --- BOTONES CENTRADOS --- */
 .flex-btn { display: flex; justify-content: center; width: 100%; }
 .btn { display: inline-block; width: 100%; max-width: 240px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; margin-top: 15px; text-align: center; transition: 0.3s; }
 .btn-azul { background: #3498db; }
