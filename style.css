@@ -1,6 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; overflow-x: hidden; }
 
+/* --- HEADER Y LOGO --- */
 .main-header, .header-blog { background: #1a2a3a; color: white; text-align: center; padding: 40px 20px; position: relative; }
 .logo-text { font-size: 2.6rem; letter-spacing: -0.5px; text-transform: lowercase; margin-bottom: 5px; }
 .animal { color: #2ecc71; font-weight: 700; } 
@@ -10,8 +11,24 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; o
 .tagline { color: #2ecc71; font-weight: bold; font-size: 0.65rem; margin-top: 5px; text-transform: uppercase; }
 .subseccion-tag { color: #3498db; font-size: 0.85rem; font-weight: bold; margin-top: 5px; letter-spacing: 1px; }
 
+/* --- BOTÓN REGRESAR CORREGIDO --- */
+.nav-blog { position: absolute; left: 10px; top: 10px; }
+.btn-atras { 
+    background: #f59e0b; 
+    color: #1a2a3a !important; 
+    padding: 8px 12px; 
+    text-decoration: none; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    font-size: 0.75rem; 
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* --- GRID Y TARJETAS --- */
 .grid-servicios, .lectura { max-width: 450px; margin: 20px auto; padding: 0 15px; }
-.card, .post-completo { background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
+.card, .post-completo { background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.card { text-align: center; }
 
 .card-lagomorfos { border-top: 8px solid #27ae60; }
 .card-bioterio { border-top: 8px solid #16a085; }
@@ -20,18 +37,20 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; o
 .card-azul { border-top: 8px solid #3498db; }
 .card-roja { border-top: 8px solid #c0392b; }
 
+/* --- TESTIMONIO --- */
 .card-reconocimiento { 
-    background: #1a2a3a; 
-    color: white; 
-    border-radius: 12px; 
-    padding: 30px; 
-    margin: 30px 0; 
-    border-left: 8px solid #2ecc71;
-    text-align: left;
+    background: #1a2a3a; color: white; border-radius: 12px; padding: 30px; margin: 30px 0; border-left: 8px solid #2ecc71; text-align: left;
 }
 .cita-profesional { font-style: italic; font-size: 1.05rem; line-height: 1.6; }
 .cita-profesional cite { display: block; margin-top: 15px; font-weight: bold; color: #2ecc71; font-style: normal; font-size: 0.85rem; }
 
+/* --- TEXTO JUSTIFICADO --- */
+.texto-justificado { text-align: justify !important; text-justify: inter-word; line-height: 1.7; color: #334155; font-size: 1.05rem; }
+.post-completo h2 { margin-bottom: 10px; color: #1a2a3a; }
+.firma { border-left: 3px solid #f59e0b; padding-left: 10px; color: #64748b; margin: 15px 0; }
+.meta { font-size: 0.75rem; color: #94a3b8; display: block; margin-bottom: 5px; }
+
+/* --- BOTONES --- */
 .flex-btn { display: flex; justify-content: center; width: 100%; }
 .btn { display: inline-block; width: 100%; max-width: 240px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; margin-top: 15px; text-align: center; }
 .btn-azul { background: #3498db; }
