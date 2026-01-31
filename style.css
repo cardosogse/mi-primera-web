@@ -36,7 +36,7 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; o
 
 .btn-wa { display: block; width: 100%; max-width: 300px; margin: 20px auto; background: #00e676; color: #1a2a3a; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1rem; text-align: center; box-shadow: 0 4px 15px rgba(0, 230, 118, 0.3); }
 
-/* --- LECTURA --- */
+/* --- TEXTO JUSTIFICADO --- */
 .texto-justificado { text-align: justify; text-justify: inter-word; line-height: 1.7; color: #334155; font-size: 1.05rem; }
 .firma { border-left: 3px solid #f59e0b; padding-left: 10px; color: #64748b; margin: 15px 0; text-align: left; }
 .meta { font-size: 0.75rem; color: #94a3b8; display: block; text-align: left; margin-bottom: 5px; }
