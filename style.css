@@ -1,43 +1,40 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; overflow-x: hidden; }
+body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; }
 
-/* Headers */
+/* HEADER */
 .main-header, .header-blog { background: #1a2a3a; color: white; text-align: center; padding: 40px 20px; position: relative; }
 
-/* ESTILO DEL LOGO animalmentetv */
-.logo-text { font-size: 2.8rem; letter-spacing: -1.5px; text-transform: lowercase; margin-bottom: 5px; }
+/* LOGO BIO-TECH */
+.logo-text { font-size: 2.6rem; letter-spacing: -1.5px; text-transform: lowercase; margin-bottom: 5px; }
 .animal { color: #00e676; font-weight: 800; }
 .mente { color: #ffffff; font-weight: 400; }
-.tv { color: #FF0000; font-weight: 300; font-style: italic; }
+.tv { color: #3498db; font-weight: 300; font-style: italic; }
 
-.tagline { color: #00e676; font-weight: bold; font-size: 0.75rem; margin-top: 10px; line-height: 1.2; }
-.logo-img { width: 80px; border-radius: 50%; border: 2px solid #00e676; margin-bottom: 10px; }
+.logo-img { display: block; margin: 0 auto 10px; width: 75px !important; border-radius: 50%; border: 2px solid #00e676; }
+.tagline { color: #00e676; font-weight: bold; font-size: 0.7rem; margin-top: 5px; }
+.subseccion-tag { color: #3498db; font-size: 0.85rem; font-weight: bold; margin-top: 5px; letter-spacing: 1px; }
 
-/* Navegación Blog */
+/* NAVEGACIÓN */
 .nav-blog { position: absolute; left: 15px; top: 15px; }
-.btn-naranja { background: #f59e0b; color: #1a2a3a; padding: 6px 12px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.7rem; }
+.btn-naranja { background: #f59e0b; color: #1a2a3a; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.75rem; box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2); }
 
-/* Grid y Tarjetas */
-.grid-servicios, .lectura { max-width: 90%; width: 450px; margin: 20px auto; padding: 10px; }
+/* GRID Y TARJETAS */
+.grid-servicios, .lectura { max-width: 450px; margin: 20px auto; padding: 0 15px; }
 .card, .post-completo { background: white; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
 
 .card-verde { border-top: 8px solid #27ae60; }
-.card-azul { border-top: 8px solid #2c3e50; }
-.card-roja { border-top: 8px solid #FF0000; }
+.card-azul { border-top: 8px solid #3498db; }
+.card-roja { border-top: 8px solid #c0392b; }
 
-/* Botones */
+/* BOTONES */
 .flex-btn { display: flex; justify-content: center; width: 100%; }
-.btn { display: inline-block; width: 220px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; margin-top: 15px; text-align: center; }
-.btn-azul { background: #2c3e50; }
-.btn-youtube { background: #FF0000; font-family: 'Roboto', sans-serif; }
+.btn { display: inline-block; width: 100%; max-width: 240px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; margin-top: 15px; text-align: center; transition: 0.3s; }
+.btn-azul { background: #3498db; }
+.btn-yt { background: #c0392b; }
+.btn-wa { display: block; width: 100%; max-width: 300px; margin: 20px auto; background: #00e676; color: #1a2a3a; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1rem; text-align: center; box-shadow: 0 4px 15px rgba(0,230,118,0.3); }
 
-/* WhatsApp */
-.seccion-whatsapp { display: flex; justify-content: center; padding: 20px 0; }
-.btn-wa { display: block; width: 280px; background: #00e676; color: #1a2a3a; padding: 18px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1rem; text-align: center; box-shadow: 0 4px 15px rgba(0,230,118,0.3); }
-
-/* Lectura Historia */
+/* LECTURA */
 .texto-justificado { text-align: justify; text-justify: inter-word; line-height: 1.7; color: #334155; font-size: 1.05rem; }
-.post-completo h2 { text-align: left; margin-bottom: 10px; color: #1a2a3a; }
 .firma { border-left: 3px solid #f59e0b; padding-left: 10px; color: #64748b; margin: 15px 0; text-align: left; }
-.meta { font-size: 0.75rem; color: #94a3b8; display: block; margin-bottom: 5px; text-align: left; }
-footer { text-align: center; padding: 30px; font-size: 0.75rem; color: #94a3b8; background: #1a2a3a; margin-top: 40px; }
+.meta { font-size: 0.75rem; color: #94a3b8; display: block; text-align: left; margin-bottom: 5px; }
+footer { text-align: center; padding: 30px; font-size: 0.75rem; color: #94a3b8; background: #1a2a3a; }
