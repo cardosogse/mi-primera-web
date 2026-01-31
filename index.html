@@ -3,46 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>animalmentetv | Sinaí Ernesto Cardoso García</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=2.3">
-    <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <title>animalmentetv | Sinaí Ernesto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4.0">
 </head>
 <body>
-
-    <header>
-        <div class="contenedor-header">
-            <img src="favicon.jpg" alt="Logo" class="logo-principal">
+    <header class="main-header">
+        <div class="contenedor">
+            <img src="favicon.jpg" alt="Logo" class="logo">
             <h1>animalmentetv</h1>
             <p class="tagline">BIÓLOGO & ESTUDIANTE DE MVZ UNAM ESPECIALISTA EN BIOTERIO (2019-2025)</p>
         </div>
     </header>
 
-    <main class="servicios">
-        <div class="tarjeta tarjeta-verde">
+    <main class="grid-servicios">
+        <div class="card card-verde">
             <h3>Ciencia de Animales de Laboratorio</h3>
-            <p>Mantenimiento técnico de cepas <strong>C57BL/6</strong>, <strong>BALB/c</strong> y <strong>CD1</strong>. Experto en reproducción y ética animal.</p>
+            <p>Manejo técnico de cepas <strong>C57BL/6</strong>, <strong>BALB/c</strong> y <strong>CD1</strong>. Especialista en reproducción y ética animal.</p>
         </div>
 
-        <div class="tarjeta tarjeta-verde">
+        <div class="card card-verde">
             <h3>Medicina y Manejo de Lagomorfos</h3>
             <p>Protocolos de anestesia, toma de muestras y cuidados críticos en conejos para investigación y docencia.</p>
         </div>
 
-        <div class="tarjeta tarjeta-azul">
-            <h3>Bitácora: Ciencia y Vida</h3>
-            <p>Historias personales sobre mi transición a los 36 años y relatos de mi amplia trayectoria técnica.</p>
-            <a href="historias.html" class="btn-blog">Explorar Bitácora</a>
+        <div class="card card-verde">
+            <h3>Bienestar Animal y Etología Aplicada</h3>
+            <p>Evaluación del comportamiento y diseño de protocolos de bienestar basados en evidencia científica.</p>
         </div>
 
-        <div class="tarjeta tarjeta-roja">
+        <div class="card card-azul">
+            <h3>Bitácora: Ciencia y Vida</h3>
+            <p>Relatos sobre mi trayectoria técnica y el reto de los 36 años en la UNAM.</p>
+            <div class="flex-btn">
+                <a href="historias.html" class="btn btn-azul">Explorar Bitácora</a>
+            </div>
+        </div>
+
+        <div class="card card-roja">
             <h3>Divulgación: Detonando Mitos</h3>
             <p>Análisis de bienestar animal basado en evidencia científica para el canal oficial.</p>
-            <a href="https://www.youtube.com/@animalmentetv" target="_blank" class="btn-youtube">Visitar Canal</a>
+            <div class="flex-btn">
+                <a href="https://www.youtube.com/@animalmentetv" target="_blank" class="btn btn-youtube">Visitar Canal de YouTube</a>
+            </div>
         </div>
 
-        <section class="contacto">
-            <a href="https://wa.me/525540860731" class="btn-radiante">Contactar por WhatsApp</a>
+        <section class="seccion-whatsapp">
+            <a href="https://wa.me/525540860731" class="btn-wa">Contactar por WhatsApp</a>
         </section>
     </main>
 
@@ -50,6 +57,5 @@
         <p>© 2026 animalmentetv | Sinaí Ernesto Cardoso-García</p>
         <p>FMVZ - UNAM</p>
     </footer>
-
 </body>
 </html>
