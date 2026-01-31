@@ -1,18 +1,182 @@
-/* ... (Todo lo anterior se mantiene igual) ... */
+/* ==========================================
+   ESTILOS BASE Y TIPOGRAFÍA
+   ========================================== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { 
+    font-family: 'Outfit', sans-serif; 
+    background: #f0f2f5; 
+    color: #1c1e21; 
+    display: flex; 
+    flex-direction: column; 
+    line-height: 1.6; 
+}
 
+/* --- LÓGICA DE STICKY FOOTER --- */
+.site-container { min-height: 100vh; display: flex; flex-direction: column; }
+.content-wrap { flex: 1 0 auto; }
+
+/* ==========================================
+   HEADER Y LOGO BIO-TECH (REFINADO)
+   ========================================== */
+.main-header, .header-blog { 
+    background: #1a2a3a; 
+    color: white; 
+    text-align: center; 
+    padding: 50px 20px; 
+    position: relative; 
+}
+.logo-img { 
+    display: block; 
+    margin: 0 auto 15px; 
+    width: 75px !important; 
+    border-radius: 50%; 
+    border: 2px solid #2ecc71; 
+}
+.logo-text { font-size: 2.8rem; letter-spacing: -1px; text-transform: lowercase; margin-bottom: 5px; }
+.animal { color: #2ecc71; font-weight: 700; } /* Verde Esmeralda */
+.mente { color: #ffffff; font-weight: 400; }
+.tv { color: #3498db; font-weight: 300; font-style: italic; }
+.tagline { 
+    color: #2ecc71; 
+    font-weight: bold; 
+    font-size: 0.7rem; 
+    letter-spacing: 1px; 
+    text-transform: uppercase; 
+}
+.subseccion-tag { color: #3498db; font-size: 0.85rem; font-weight: bold; margin-top: 5px; letter-spacing: 1px; }
+
+/* ==========================================
+   CONTENEDORES Y GRID (RESPONSIVO)
+   ========================================== */
+.contenedor-principal, .lectura { 
+    width: 95%; 
+    max-width: 500px; /* Ancho para móvil */
+    margin: 30px auto; 
+}
+
+.grid-servicios { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+/* --- TARJETAS CATEGORIZADAS --- */
+.card, .post-completo { 
+    background: white; 
+    border-radius: 15px; 
+    padding: 30px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+}
+.card { text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+.card h3 { margin-bottom: 15px; color: #1a2a3a; font-size: 1.3rem; }
+
+.card-lagomorfos { border-top: 8px solid #27ae60; }
+.card-bioterio { border-top: 8px solid #16a085; }
+.card-etologia { border-top: 8px solid #1b5e20; }
+.card-cursos { border-top: 8px solid #f39c12; }
+.card-azul { border-top: 8px solid #3498db; }
+.card-roja { border-top: 8px solid #c0392b; }
+
+/* ==========================================
+   RECONOCIMIENTO INTERNACIONAL (OSANNI BIO)
+   ========================================== */
+.card-reconocimiento { 
+    background: #1a2a3a; 
+    color: white; 
+    border-radius: 15px; 
+    padding: 30px; 
+    margin: 40px 0; 
+    border-left: 10px solid #2ecc71; 
+    text-align: left;
+}
+.card-reconocimiento h4 { color: #2ecc71; font-size: 1.1rem; margin-bottom: 5px; text-transform: uppercase; }
+.fecha-correo { display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 25px; font-weight: bold; }
+.cita-profesional { font-style: italic; font-size: 1rem; line-height: 1.7; }
+.cita-profesional cite { 
+    display: block; 
+    margin-top: 20px; 
+    font-weight: bold; 
+    color: #2ecc71; 
+    font-style: normal; 
+    font-size: 0.9rem; 
+}
+
+/* ==========================================
+   ELEMENTOS DE TEXTO Y BOTONES
+   ========================================== */
+.texto-justificado { text-align: justify !important; text-justify: inter-word; }
+.flex-btn { margin-top: auto; padding-top: 20px; }
+.btn { 
+    display: inline-block; 
+    width: 100%; 
+    padding: 12px; 
+    border-radius: 10px; 
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: 0.3s;
+}
+.btn-azul { background: #3498db; }
+.btn-yt { background: #c0392b; }
+.btn-wa { 
+    display: block; 
+    width: 100%; 
+    max-width: 350px; 
+    margin: 40px auto; 
+    background: #00e676; 
+    color: #1a2a3a; 
+    padding: 20px; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    text-align: center; 
+    box-shadow: 0 10px 20px rgba(0, 230, 118, 0.2); 
+}
+
+/* --- NAVEGACIÓN BITÁCORA --- */
+.bg-blog { background: #f8fafc; }
+.nav-blog { position: absolute; left: 20px; top: 20px; }
+.btn-atras { 
+    background: #f59e0b; 
+    color: #1a2a3a !important; 
+    padding: 10px 18px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+}
+.firma { border-left: 4px solid #f59e0b; padding-left: 15px; margin: 25px 0; color: #64748b; font-style: italic; }
+.meta { color: #94a3b8; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; display: block; }
+
+/* ==========================================
+   FOOTER CON BLINDAJE LEGAL
+   ========================================== */
 .main-footer { 
     flex-shrink: 0; 
     background: #1a2a3a; 
     color: #94a3b8; 
     text-align: center; 
-    padding: 30px 20px; 
+    padding: 35px 20px; 
     font-size: 0.75rem; 
-    line-height: 1.5;
+    line-height: 1.6;
 }
-
 .main-footer a { color: #2ecc71; text-decoration: none; font-weight: bold; }
+.cc-text { margin-top: 12px; font-style: italic; color: #64748b; }
+.update-text { margin-top: 8px; opacity: 0.6; font-size: 0.65rem; }
 
-.cc-text { margin-top: 10px; font-style: italic; color: #64748b; }
-.update-text { margin-top: 5px; opacity: 0.6; font-size: 0.65rem; }
-
-/* ... (Los Media Queries se mantienen intactos para PC) ... */
+/* ==========================================
+   OPTIMIZACIÓN PC (DESKTOP) - RESPONSIVE
+   ========================================== */
+@media (min-width: 768px) {
+    .contenedor-principal { max-width: 1100px; }
+    .grid-servicios { 
+        grid-template-columns: repeat(3, 1fr); /* Cuadrícula de 6 */
+        gap: 30px; 
+    }
+    .card-reconocimiento { padding: 60px; }
+    .logo-text { font-size: 4rem; }
+    .lectura { max-width: 900px; } /* Centrado Premium */
+}
