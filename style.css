@@ -1,55 +1,36 @@
-/* --- NUEVOS ESTILOS PARA BOTONES Y BLOG --- */
+/* --- CONFIGURACIÓN BASE --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Outfit', sans-serif; background-color: #f1f5f9; color: #1e293b; line-height: 1.6; }
 
-/* Botón en el Portal Principal */
-.btn-blog {
-    display: inline-block;
-    background-color: #2c3e50; /* Azul Oxford Profesional */
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-.btn-blog:hover { background-color: #1a252f; transform: scale(1.05); }
+/* --- HEADER Y TÍTULOS --- */
+header { background-color: #1a2a3a; color: white; text-align: center; padding: 40px 20px; position: relative; }
+h1 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; letter-spacing: 1.5px; }
+.titulo-blanco { color: #ffffff !important; } /* Forzado a blanco para Bitácora */
 
-/* Header del Blog */
-.header-blog {
-    background-color: #2c3e50;
-    padding: 40px 20px;
-    text-align: center;
-}
+.tagline { font-size: 0.8rem; font-weight: 700; color: #00e676; margin-top: 10px; text-transform: uppercase; }
+.logo-principal { width: 90px; border-radius: 50%; border: 2px solid #00e676; margin-bottom: 10px; }
 
-.contenedor-nav {
-    max-width: 750px;
-    margin: 0 auto 20px auto;
-    text-align: left;
-}
+/* --- BOTÓN REGRESAR (Alineado a la izquierda) --- */
+.nav-izquierda { position: absolute; left: 15px; top: 15px; }
+.btn-regresar { background-color: #f59e0b; color: #1a2a3a; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 0.75rem; }
 
-/* Botón Regresar (Contraste Elegante) */
-.btn-regresar {
-    background-color: #f59e0b; /* Ámbar/Oro para contraste */
-    color: #1a2a3a;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 0.85rem;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
-}
+/* --- TARJETAS CON COLORES --- */
+.servicios { max-width: 800px; margin: 0 auto; padding: 20px; }
+.tarjeta { background: white; border-radius: 15px; padding: 25px; margin-bottom: 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 
-.btn-regresar:hover { background-color: #d97706; color: white; }
+.tarjeta-verde { border-top: 8px solid #27ae60; }
+.tarjeta-azul { border-top: 8px solid #2c3e50; }
+.tarjeta-roja { border-top: 8px solid #c0392b; }
 
-/* Estilo del Autor */
-.autor {
-    color: #64748b;
-    font-size: 0.9rem;
-    margin-bottom: 25px;
-    border-left: 3px solid #f59e0b;
-    padding-left: 10px;
-}
+/* --- BOTONES DE ACCIÓN --- */
+.btn-blog, .btn-youtube, .btn-radiante { display: inline-block; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
 
-.body-lectura { background-color: #f1f5f9; }
-.post h2 { color: #1a2a3a; line-height: 1.2; margin-bottom: 5px; }
-.contenido-texto p { margin-bottom: 20px; font-size: 1.1rem; color: #334155; }
+.btn-blog { background-color: #2c3e50; color: white; padding: 12px 25px; }
+.btn-youtube { background-color: #c0392b; color: white; padding: 12px 25px; }
+.btn-radiante { background-color: #00e676; color: #1a2a3a; padding: 15px 35px; border-radius: 50px; font-size: 1rem; box-shadow: 0 8px 15px rgba(0, 230, 118, 0.2); }
+
+/* --- FOOTER --- */
+footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 25px; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); }
+.autor { border-left: 3px solid #f59e0b; padding-left: 10px; margin: 15px 0; color: #64748b; font-size: 0.9rem; text-align: left; }
+.contenedor-articulo { max-width: 700px; margin: 0 auto; padding: 20px; }
+.post { background: white; padding: 30px; border-radius: 10px; text-align: left; }
