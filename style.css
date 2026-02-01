@@ -11,13 +11,13 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 /* --- HEADER PRINCIPAL --- */
 .main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; }
 
-/* --- HEADER BLOG (CORRECCIÓN BOTÓN AMONTONADO) --- */
+/* --- HEADER BLOG (SOLUCIÓN AL AMONTONAMIENTO) --- */
 .header-blog { background: #1a2a3a; color: white; padding: 20px; }
 .header-flex-container { 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    gap: 20px; /* Evita que el botón choque con el logo */
+    gap: 20px; /* Evita choque en móvil */
 }
 .container-boton { width: 100%; text-align: left; }
 
@@ -32,7 +32,7 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 .sub-tagline { color: #94a3b8; font-size: 0.65rem; letter-spacing: 1px; margin-top: 5px; font-weight: bold; }
 .subseccion-tag { color: #3498db; font-size: 0.8rem; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
 
-/* --- TARJETAS Y ALINEACIÓN DE BOTONES (MODO PC) --- */
+/* --- TARJETAS Y ALINEACIÓN MATEMÁTICA --- */
 .contenedor-principal, .lectura { width: 95%; max-width: 500px; margin: 20px auto; }
 .grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
 
@@ -42,25 +42,23 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
     padding: 25px; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
     display: flex; 
-    flex-direction: column; /* Fundamental para la alineación */
+    flex-direction: column; /* Para empujar el botón al fondo */
 }
 
 .card h3 { margin-bottom: 15px; color: #1a2a3a; font-size: 1.3rem; text-align: center; }
 
-/* ESTE ES EL SECRETO: Empuja el botón al fondo de la tarjeta */
-.flex-btn { 
-    margin-top: auto; 
-    padding-top: 20px; 
-}
+/* El "Imán" de botones: Los alinea horizontalmente en PC */
+.flex-btn { margin-top: auto; padding-top: 20px; }
 
 /* --- BOTONES --- */
-.btn { display: inline-block; width: 100%; padding: 12px; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; text-align: center; }
-.btn-atras { background: #f59e0b; color: #1a2a3a !important; padding: 8px 20px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; }
+.btn { display: inline-block; width: 100%; padding: 12px; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; text-align: center; transition: 0.3s; }
+.btn-atras { background: #f59e0b; color: #1a2a3a !important; padding: 8px 20px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-block; font-size: 0.85rem; }
 .btn-azul { background: #3498db; }
 .btn-yt { background: #c0392b; }
-.btn-wa { display: block; width: 100%; max-width: 350px; margin: 40px auto; background: #00e676; color: #1a2a3a; padding: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; }
+.btn:hover { opacity: 0.9; transform: translateY(-2px); }
+.btn-wa { display: block; width: 100%; max-width: 350px; margin: 40px auto; background: #00e676; color: #1a2a3a; padding: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; box-shadow: 0 10px 20px rgba(0, 230, 118, 0.2); }
 
-/* COLORES DE BORDES */
+/* BORDES DE COLOR */
 .card-lagomorfos { border-top: 8px solid #27ae60; }
 .card-bioterio { border-top: 8px solid #16a085; }
 .card-etologia { border-top: 8px solid #1b5e20; }
@@ -70,38 +68,43 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 
 .texto-justificado { text-align: justify !important; text-justify: inter-word; }
 
-/* --- FOOTER --- */
-.main-footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 0.7rem; }
-.main-footer a { color: #2ecc71; text-decoration: none; }
+/* --- ESQUEMA TÉCNICO (CÁPSULA) --- */
+.capsula-ciencia { margin-top: 35px; padding: 25px; background: #f1f5f9; border-radius: 12px; border: 1px dashed #3498db; }
+.capsula-ciencia h3 { font-size: 1.1rem; color: #1a2a3a; margin-bottom: 15px; }
+.esquema-comparativo { display: flex; align-items: center; justify-content: space-around; margin: 20px 0; }
+.bloque-farmaco { padding: 15px; border-radius: 10px; text-align: center; border: 2px solid #ccc; flex: 1; margin: 0 10px; }
+.pento { background: #e0f2fe; border-color: #3498db; }
+.freca { background: #fef2f2; border-color: #ef4444; }
+.flecha { font-size: 1.5rem; font-weight: bold; margin: 5px 0; }
+.abajo { color: #3498db; }
+.arriba { color: #ef4444; }
+.label { font-weight: bold; font-size: 0.85rem; display: block; }
+.efecto { font-size: 0.75rem; color: #64748b; }
+.vs { font-weight: bold; color: #94a3b8; font-size: 1.2rem; }
+.nota-explicativa { background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #2ecc71; font-size: 0.85rem; margin-top: 15px; }
 
-/* --- OPTIMIZACIÓN PC (MATEMÁTICAMENTE ARMONIOSO) --- */
+/* --- FOOTER --- */
+.main-footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 35px 20px; font-size: 0.75rem; }
+.main-footer a { color: #2ecc71; text-decoration: none; }
+.cc-text { margin-top: 10px; font-style: italic; }
+
+/* --- OPTIMIZACIÓN PC (ELIMINACIÓN DE ALUCINACIONES) --- */
 @media (min-width: 768px) {
     .header-flex-container { flex-direction: row; justify-content: space-between; padding: 0 50px; }
     .container-boton { width: auto; }
     .titulo-centrado { text-align: right; }
     .contenedor-principal { max-width: 1100px; }
     
-    /* En PC, las tarjetas de la misma fila tendrán la misma altura automáticamente */
+    /* Grid matemáticamente alineado */
     .grid-servicios { grid-template-columns: repeat(3, 1fr); gap: 30px; }
     
     .lectura { max-width: 850px; }
     .tagline { font-size: 1.1rem; letter-spacing: 3px; }
 }
-   ========================================== */
-.main-footer { 
-    flex-shrink: 0; 
-    background: #1a2a3a; 
-    color: #94a3b8; 
-    text-align: center; 
-    padding: 35px 20px; 
-    font-size: 0.75rem; 
-    line-height: 1.6;
+@media (max-width: 480px) {
+    .esquema-comparativo { flex-direction: column; gap: 10px; }
+    .bloque-farmaco { width: 100%; margin: 5px 0; }
 }
-.main-footer a { color: #2ecc71; text-decoration: none; font-weight: bold; }
-.cc-text { margin-top: 12px; font-style: italic; color: #64748b; }
-.update-text { margin-top: 8px; opacity: 0.6; font-size: 0.65rem; }
-
-/* ==========================================
    OPTIMIZACIÓN PC (DESKTOP) - RESPONSIVE
    ========================================== */
 @media (min-width: 768px) {
