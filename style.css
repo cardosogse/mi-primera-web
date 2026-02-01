@@ -1,5 +1,5 @@
 /* ==========================================
-   CSS LEGO PREMIUM - v60.0 (MAESTRO)
+   CSS LEGO PREMIUM - v61.0 (MASTER)
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
@@ -13,7 +13,7 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 /* --- HEADERS --- */
 .main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; }
 .logo-img { display: block; margin: 0 auto 15px; width: 75px !important; border-radius: 50%; border: 2px solid #2ecc71; }
-.logo-text { font-size: 2.8rem; letter-spacing: -1px; text-transform: lowercase; }
+.logo-text { font-size: 2.8rem; letter-spacing: -1px; } /* Se eliminó lowercase */
 .animal { color: #2ecc71; font-weight: 700; }
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
