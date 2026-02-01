@@ -1,5 +1,5 @@
 /* ==========================================
-   BASE Y RESPONSIVE (CELULAR Y PC)
+   CONFIGURACIÓN BASE
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
@@ -8,100 +8,75 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 .site-container { min-height: 100vh; display: flex; flex-direction: column; }
 .content-wrap { flex: 1 0 auto; }
 
-/* --- HEADER --- */
-.main-header, .header-blog { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; position: relative; }
-.logo-img { display: block; margin: 0 auto 15px; width: 75px !important; border-radius: 50%; border: 2px solid #2ecc71; }
-.logo-text { font-size: 2.8rem; letter-spacing: -1px; text-transform: lowercase; }
+/* --- HEADER PRINCIPAL --- */
+.main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; }
+
+/* --- SOLUCIÓN ERROR AMONTONAMIENTO (MÓVIL) --- */
+.header-blog { background: #1a2a3a; color: white; padding: 20px; }
+.header-flex-container { 
+    display: flex; 
+    flex-direction: column; /* Apila elementos para evitar choque */
+    align-items: center; 
+    gap: 20px;
+}
+.container-boton { width: 100%; text-align: left; } /* Mantiene el botón a la izquierda */
+
+/* --- DISEÑO DE LOGO Y TAGLINES --- */
+.logo-img { display: block; margin: 0 auto 10px; width: 70px !important; border-radius: 50%; border: 2px solid #2ecc71; }
+.logo-text { font-size: 2.5rem; letter-spacing: -1px; text-transform: lowercase; }
 .animal { color: #2ecc71; font-weight: 700; }
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
 
-.tagline { color: #2ecc71; font-weight: bold; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
-.sub-tagline { color: #94a3b8; font-size: 0.7rem; letter-spacing: 1px; margin-top: 5px; font-weight: bold; }
-.subseccion-tag { color: #3498db; font-size: 0.85rem; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
+.tagline { color: #2ecc71; font-weight: bold; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; }
+.sub-tagline { color: #94a3b8; font-size: 0.65rem; letter-spacing: 1px; margin-top: 5px; font-weight: bold; }
+.subseccion-tag { color: #3498db; font-size: 0.8rem; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
 
-/* --- GRID Y TARJETAS --- */
-.contenedor-principal, .lectura { width: 95%; max-width: 500px; margin: 30px auto; }
+/* --- BOTONES --- */
+.btn-atras { 
+    background: #f59e0b; 
+    color: #1a2a3a !important; 
+    padding: 8px 20px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+/* --- CONTENIDOS --- */
+.contenedor-principal, .lectura { width: 95%; max-width: 500px; margin: 20px auto; }
 .grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.card, .post-completo { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+.texto-justificado { text-align: justify !important; text-justify: inter-word; }
 
-.card, .post-completo { background: white; border-radius: 15px; padding: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-.card h3 { margin-bottom: 15px; color: #1a2a3a; font-size: 1.3rem; text-align: center; }
-
-.card-lagomorfos { border-top: 8px solid #27ae60; }
-.card-bioterio { border-top: 8px solid #16a085; }
-.card-etologia { border-top: 8px solid #1b5e20; }
-.card-cursos { border-top: 8px solid #f39c12; }
+/* COLORES DE TARJETAS */
 .card-azul { border-top: 8px solid #3498db; }
 .card-roja { border-top: 8px solid #c0392b; }
 
-/* --- CÁPSULA TÉCNICA --- */
-.capsula-ciencia { margin-top: 40px; padding: 25px; background: #f1f5f9; border-radius: 12px; border: 1px dashed #3498db; }
-.esquema-comparativo { display: flex; align-items: center; justify-content: space-around; margin: 20px 0; gap: 10px; }
-.bloque-farmaco { flex: 1; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #ccc; }
+/* --- ESQUEMA TÉCNICO --- */
+.capsula-ciencia { margin-top: 30px; padding: 20px; background: #f1f5f9; border-radius: 12px; border: 1px dashed #3498db; }
+.esquema-comparativo { display: flex; align-items: center; justify-content: space-around; margin-top: 15px; }
+.bloque-farmaco { padding: 10px; border-radius: 8px; text-align: center; border: 2px solid #ccc; flex: 1; margin: 0 5px; }
 .pento { background: #e0f2fe; border-color: #3498db; }
 .freca { background: #fef2f2; border-color: #ef4444; }
-.flecha { font-size: 1.5rem; font-weight: bold; }
+.flecha { font-size: 1.2rem; font-weight: bold; }
 .abajo { color: #3498db; }
 .arriba { color: #ef4444; }
-.vs { font-weight: bold; color: #94a3b8; }
-.nota-explicativa { background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #2ecc71; font-size: 0.85rem; }
 
-/* --- RECONOCIMIENTO --- */
-.card-reconocimiento { background: #1a2a3a; color: white; border-radius: 15px; padding: 30px; margin: 40px 0; border-left: 10px solid #2ecc71; }
-.card-reconocimiento h4 { color: #2ecc71; font-size: 1rem; text-transform: uppercase; margin-bottom: 10px; }
-.cita-profesional { font-style: italic; font-size: 1rem; line-height: 1.7; }
-.cita-profesional cite { display: block; margin-top: 20px; color: #2ecc71; font-weight: bold; font-style: normal; }
-
-/* --- BOTONES Y FOOTER --- */
-.btn { display: inline-block; width: 100%; padding: 12px; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; text-align: center; }
-.btn-atras { background: #f59e0b; color: #1a2a3a !important; position: absolute; left: 20px; top: 20px; padding: 10px 15px; border-radius: 8px; }
-.btn-azul { background: #3498db; }
-.btn-yt { background: #c0392b; }
-.btn-wa { display: block; width: 100%; max-width: 350px; margin: 40px auto; background: #00e676; color: #1a2a3a; padding: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; }
-
-.main-footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 35px 20px; font-size: 0.75rem; }
+/* --- FOOTER --- */
+.main-footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 30px 20px; font-size: 0.7rem; }
 .main-footer a { color: #2ecc71; text-decoration: none; }
-.cc-text { margin-top: 10px; font-style: italic; }
 
-.texto-justificado { text-align: justify !important; text-justify: inter-word; }
-
-/* --- PC OPTIMIZACIÓN --- */
+/* --- MEDIA QUERIES (PC) --- */
 @media (min-width: 768px) {
+    .header-flex-container { flex-direction: row; justify-content: space-between; padding: 0 50px; }
+    .container-boton { width: auto; }
+    .titulo-centrado { text-align: right; }
     .contenedor-principal { max-width: 1100px; }
     .grid-servicios { grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .lectura { max-width: 900px; }
-    .logo-text { font-size: 4rem; }
-    .tagline { font-size: 1.2rem; letter-spacing: 4px; }
+    .lectura { max-width: 850px; }
 }
-@media (max-width: 480px) {
-    .esquema-comparativo { flex-direction: column; }
-}
-/* ==========================================
-   ELEMENTOS DE TEXTO Y BOTONES
-   ========================================== */
-.texto-justificado { text-align: justify !important; text-justify: inter-word; }
-.flex-btn { margin-top: auto; padding-top: 20px; }
-.btn { 
-    display: inline-block; 
-    width: 100%; 
-    padding: 12px; 
-    border-radius: 10px; 
-    text-decoration: none; 
-    color: white; 
-    font-weight: bold; 
-    text-align: center; 
-    transition: 0.3s;
-}
-.btn-azul { background: #3498db; }
-.btn-yt { background: #c0392b; }
-.btn-wa { 
-    display: block; 
-    width: 100%; 
-    max-width: 350px; 
-    margin: 40px auto; 
-    background: #00e676; 
-    color: #1a2a3a; 
-    padding: 20px; 
     border-radius: 50px; 
     text-decoration: none; 
     font-weight: bold; 
