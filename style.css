@@ -1,5 +1,5 @@
 /* ==========================================
-   CSS LEGO PREMIUM - v52.0
+   CSS LEGO PREMIUM - v53.0 (ESTRUCTURA ACADÉMICA)
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { height: 100%; }
@@ -7,9 +7,8 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 
 .site-container { min-height: 100vh; display: flex; flex-direction: column; }
 .content-wrap { flex: 1 0 auto; }
-
-/* JUSTIFICACIÓN MATEMÁTICA */
 .text-justify { text-align: justify !important; text-justify: inter-word !important; }
+.text-center { text-align: center !important; }
 
 /* --- HEADERS --- */
 .main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; }
@@ -21,18 +20,20 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 .tagline { color: #2ecc71; font-weight: bold; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
 .sub-tagline { color: #94a3b8; font-size: 0.7rem; margin-top: 5px; font-weight: bold; }
 
-/* HEADER BLOG (BALANCEADO) */
+/* HEADER BLOG */
 .header-blog { background: #1a2a3a; color: white; padding: 25px 20px; }
 .header-flex-wrapper { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
 .btn-regresar-minimal { color: #f59e0b !important; text-decoration: none; font-weight: bold; font-size: 0.8rem; border: 1px solid #f59e0b; padding: 6px 14px; border-radius: 5px; flex: 0 0 auto; }
 .titulo-centrado { flex: 1; text-align: center; }
 .spacer-placeholder { flex: 0 0 100px; }
+.subseccion-tag { color: #3498db; font-size: 0.85rem; font-weight: bold; margin-top: 5px; text-transform: uppercase; }
 
 /* --- GRID Y TARJETAS --- */
 .contenedor-principal { width: 95%; max-width: 1100px; margin: 30px auto; }
 .grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
 .card { background: white; border-radius: 15px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); display: flex; flex-direction: column; height: 100%; border-top: 8px solid #ccc; }
 .flex-btn { margin-top: auto; padding-top: 20px; }
+.card h3 { margin-bottom: 15px; color: #1a2a3a; font-size: 1.3rem; text-align: center; }
 
 .card-lagomorfos { border-top-color: #27ae60; }
 .card-bioterio { border-top-color: #16a085; }
@@ -41,24 +42,27 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 .card-azul { border-top-color: #3498db; }
 .card-roja { border-top-color: #c0392b; }
 
-/* RECONOCIMIENTO BLINDADO */
 .card-reconocimiento { background-color: #1a2a3a !important; color: white !important; border-radius: 15px; padding: 35px; margin: 40px 0; border-left: 10px solid #2ecc71 !important; }
 .card-reconocimiento h4 { color: #2ecc71 !important; margin-bottom: 15px; text-transform: uppercase; }
 
-/* --- BOTONES Y FOOTER --- */
+/* --- BOTONES --- */
 .btn { display: inline-block; width: 100%; padding: 12px; border-radius: 10px; text-decoration: none; color: white; font-weight: bold; text-align: center; }
 .btn-azul { background: #3498db; }
-.btn-yt { background: #c0392b !important; max-width: 400px; } /* Evita expansión exagerada en PC */
+.btn-yt { background: #c0392b !important; max-width: 400px; }
 .btn-wa { display: block; width: 100%; max-width: 350px; margin: 40px auto; background: #00e676 !important; color: #1a2a3a !important; padding: 20px; border-radius: 50px; text-decoration: none; font-weight: bold; text-align: center; }
-
-/* CENTRADO DE BOTÓN DE DEBATE */
 .flex-btn-center { display: flex; justify-content: center; margin-top: 20px; width: 100%; }
 
+/* --- LECTURA Y ESTRUCTURA ACADÉMICA --- */
 .lectura { width: 95%; max-width: 850px; margin: 30px auto; }
 .post-completo { background: white; border-radius: 15px; padding: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-.objetivo-educativo { background: #f1f5f9; border-left: 5px solid #3498db; padding: 15px; margin-bottom: 25px; }
+.lectura h3 { color: #1a2a3a; margin-top: 25px; margin-bottom: 15px; font-size: 1.2rem; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; }
 
-/* --- CIENCIA Y RESPONSIVE --- */
+.objetivo-educativo { background: #f1f5f9; border-left: 5px solid #3498db; padding: 15px; margin-bottom: 25px; font-size: 0.95rem; color: #475569; }
+
+/* NUEVA NOTA DE BIENESTAR */
+.nota-bienestar { background: #ecfdf5; border-left: 5px solid #2ecc71; padding: 20px; margin: 30px 0; border-radius: 8px; }
+.nota-bienestar h4 { color: #065f46; margin-bottom: 10px; }
+
 .capsula-ciencia { margin-top: 40px; padding: 25px; background: #f1f5f9; border-radius: 12px; border: 1px dashed #3498db; }
 .esquema-comparativo { display: flex; align-items: center; justify-content: space-around; margin: 20px 0; gap: 10px; }
 .bloque-farmaco { flex: 1; padding: 15px; border-radius: 8px; text-align: center; border: 2px solid #ccc; font-weight: bold; }
@@ -68,17 +72,19 @@ body { font-family: 'Outfit', sans-serif; background: #f0f2f5; color: #1c1e21; d
 .referencias-tecnicas { margin-top: 35px; padding-top: 20px; border-top: 1px solid #eee; }
 .lista-referencias { list-style: square; padding-left: 20px; font-size: 0.85rem; color: #64748b; }
 
+/* NUEVA DECLARACIÓN EDITORIAL */
+.declaracion-editorial { margin-top: 30px; font-size: 0.85rem; color: #64748b; }
+
 .main-footer { background: #1a2a3a; color: #94a3b8; text-align: center; padding: 35px 20px; font-size: 0.75rem; }
 .cc-link { color: #2ecc71 !important; font-weight: bold; text-decoration: none; }
 
-/* REGLAS MÓVIL BLINDADAS */
 @media (max-width: 767px) {
     .header-flex-wrapper { flex-direction: column; gap: 15px; }
     .btn-regresar-minimal { align-self: flex-start; }
     .spacer-placeholder { display: none; }
     .esquema-comparativo { flex-direction: column; gap: 15px; }
     .bloque-farmaco { width: 100%; }
-    .btn-yt { max-width: 100%; } /* En móvil sí puede usar el ancho total */
+    .btn-yt { max-width: 100%; }
 }
 @media (min-width: 768px) {
     .grid-servicios { grid-template-columns: repeat(3, 1fr); gap: 30px; }
