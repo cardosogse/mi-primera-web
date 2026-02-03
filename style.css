@@ -1,52 +1,53 @@
 /* ==========================================
-   CSS COSMOS v7.1 – EDICIÓN DE ORO
+   CSS COSMOS v7.2 – EDICIÓN PURA
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
 .content-wrap { flex: 1; }
 .text-justify { text-align: justify !important; text-justify: inter-word !important; }
 
-/* --- ANIMACIÓN RADIANTE PARA "ANIMAL" --- */
-@keyframes text-glow {
-    0% { text-shadow: 0 0 5px rgba(46, 204, 113, 0.4); }
-    50% { text-shadow: 0 0 15px rgba(46, 204, 113, 0.9), 0 0 25px rgba(46, 204, 113, 0.4); }
-    100% { text-shadow: 0 0 5px rgba(46, 204, 113, 0.4); }
+/* --- ANIMACIONES --- */
+@keyframes green-radiance {
+    0% { box-shadow: 0 0 0 2px #2ecc71, 0 0 8px rgba(46, 204, 113, 0.4); }
+    50% { box-shadow: 0 0 0 3px #2ecc71, 0 0 18px rgba(46, 204, 113, 0.6); }
+    100% { box-shadow: 0 0 0 2px #2ecc71, 0 0 8px rgba(46, 204, 113, 0.4); }
 }
-.animal { color: #2ecc71; font-weight: 700; animation: text-glow 2.5s infinite ease-in-out; }
+
+@keyframes text-glow {
+    0% { text-shadow: 0 0 3px rgba(46, 204, 113, 0.3); }
+    50% { text-shadow: 0 0 12px rgba(46, 204, 113, 0.8); }
+    100% { text-shadow: 0 0 3px rgba(46, 204, 113, 0.3); }
+}
+
+/* --- CLASES DE IDENTIDAD --- */
+.animal-plano { color: #2ecc71; font-weight: 700; } /* Sin brillo para index */
+.animal-radiante { color: #2ecc71; font-weight: 700; animation: text-glow 2.5s infinite ease-in-out; } /* Con brillo para historias */
 
 /* --- HEADERS --- */
 .main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; border-bottom: 5px solid #2ecc71; }
-.logo-img { width: 75px; border-radius: 50%; border: 2px solid #2ecc71; margin-bottom: 15px; }
+.logo-img-radiante { width: 75px; border-radius: 50%; margin-bottom: 15px; animation: green-radiance 3s infinite ease-in-out; }
+
 .nombre-autor { font-size: 2.1rem; color: #ffffff; margin-bottom: 5px; }
-.sub-tagline-credenciales { color: #ffffff; font-size: 0.85rem; font-weight: bold; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
+.sub-tagline-credenciales { color: #ffffff; font-size: 0.85rem; font-weight: bold; opacity: 0.9; text-transform: uppercase; }
 
 .logo-text { font-size: 2.7rem; letter-spacing: -1.5px; margin-top: 15px; display: inline-block; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
-.tagline { margin-top: 8px; color: #2ecc71; font-weight: bold; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+.tagline { margin-top: 8px; color: #2ecc71; font-weight: bold; font-size: 1rem; text-transform: uppercase; }
 
-/* --- ENCABEZADO SUBPÁGINAS (SIN AMONTONAR) --- */
-.header-sub { 
-    background: #1a2a3a; 
-    padding: 15px 20px; 
-    display: grid; 
-    grid-template-columns: 1fr auto 1fr; /* Centrado matemático */
-    align-items: center; 
-    border-bottom: 3px solid #2ecc71; 
-}
-.header-left { display: flex; align-items: center; }
-.header-center { display: flex; justify-content: center; }
+/* --- BOTÓN REGRESAR DISCRETO (OPTIMIZADO) --- */
+.header-sub { background: #1a2a3a; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #2ecc71; }
 .btn-regresar-minimal { 
-    color: #f39c12; 
-    border: 1.5px solid #f39c12; 
-    padding: 8px 12px; 
+    color: #94a3b8; 
     text-decoration: none; 
-    border-radius: 8px; 
-    font-weight: 900; 
-    font-size: 0.75rem; 
-    background: rgba(243, 156, 18, 0.05);
-    white-space: nowrap;
+    font-size: 0.7rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
 }
+.btn-regresar-minimal:hover { color: #f39c12; border-bottom: 1px solid #f39c12; }
 
 /* --- GRID MOSAICOS --- */
 .contenedor-principal { width: 95%; max-width: 1100px; margin: 40px auto; }
@@ -69,13 +70,8 @@ body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; l
 .btn-yt { background: #c0392b; }
 .btn-wa { display: block; max-width: 320px; margin: 50px auto; background: #2ecc71; color: #000 !important; padding: 18px; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 900; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3); }
 
-/* --- BLOG Y CONTENIDO --- */
-.post-completo { background: white; padding: 45px 35px; border-radius: 15px; box-shadow: 0 4px 25px rgba(0,0,0,0.06); }
-.capsula-antagonismo { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 15px; padding: 25px; margin: 35px 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
-@media (min-width: 650px) { .capsula-antagonismo { flex-direction: row; justify-content: space-around; } }
-
-/* --- FOOTER COPYRIGHT FULL --- */
-.main-footer { background: #1a2a3a; padding: 50px 20px; text-align: center; color: #ffffff; font-size: 0.95rem; border-top: 1px solid rgba(255,255,255,0.1); }
-.cc-green { color: #2ecc71; font-weight: bold; text-decoration: none; }
-.footer-line { margin-bottom: 10px; opacity: 0.9; }
-.last-update { opacity: 0.6; font-size: 0.8rem; margin-top: 15px; font-style: italic; }
+/* --- FOOTER COPYRIGHT (FORMATO IMAGEN) --- */
+.main-footer { background: #1a2a3a; padding: 50px 20px; text-align: center; color: #ffffff; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.8; }
+.cc-text { color: #8899a6; font-style: normal; }
+.cc-link { color: #2ecc71; font-weight: bold; text-decoration: none; }
+.update-text { display: block; margin-top: 15px; opacity: 0.5; font-size: 0.75rem; }
