@@ -1,47 +1,30 @@
 /* ==========================================
-   CSS COSMOS FINAL – VETERINARY EDITION
+   CSS COSMOS 4.0 – VETERINARY RIGOR
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Outfit', sans-serif; background: #0f172a; color: #f1f5f9; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
-.content-wrap { flex: 1 0 auto; }
+body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+.content-wrap { flex: 1; }
 .text-justify { text-align: justify !important; text-justify: inter-word !important; }
 
-/* --- HEADER QUIRÚRGICO --- */
-.main-header { background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%); padding: 60px 20px; text-align: center; border-bottom: 4px solid #2ecc71; }
-.logo-img { width: 85px; border-radius: 50%; border: 3px solid #2ecc71; margin-bottom: 25px; box-shadow: 0 0 20px rgba(46, 204, 113, 0.3); }
-.nombre-autor { font-size: 2.3rem; letter-spacing: -0.5px; margin-bottom: 8px; color: #ffffff; }
-.sub-tagline-credenciales { color: #ffffff; font-size: 0.9rem; font-weight: bold; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; }
+/* --- HEADER PROFESIONAL --- */
+.main-header { background: #1a2a3a; color: white; text-align: center; padding: 50px 20px; border-bottom: 5px solid #2ecc71; }
+.logo-img { width: 75px; border-radius: 50%; border: 2px solid #2ecc71; margin-bottom: 15px; }
+.nombre-autor { font-size: 2.1rem; color: #ffffff; margin-bottom: 5px; }
+.sub-tagline-credenciales { color: #ffffff; font-size: 0.85rem; font-weight: bold; opacity: 0.9; text-transform: uppercase; letter-spacing: 1px; }
 
-.logo-text { font-size: 2.8rem; letter-spacing: -1.5px; display: inline-block; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+.logo-text { font-size: 2.7rem; letter-spacing: -1.5px; margin-top: 20px; display: inline-block; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; }
 .animal { color: #2ecc71; font-weight: 700; } /* VERDE OFICIAL */
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
-.tagline { margin-top: 10px; color: #2ecc71; font-size: 1.1rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.tagline { margin-top: 8px; color: #2ecc71; font-weight: bold; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
 
-/* --- GRID DE SERVICIOS --- */
-.contenedor-principal { width: 92%; max-width: 1100px; margin: 40px auto; }
-.grid-servicios { display: grid; grid-template-columns: 1fr; gap: 25px; }
+/* --- GRID DE MOSAICOS (CORREGIDO) --- */
+.contenedor-principal { width: 95%; max-width: 1100px; margin: 40px auto; }
+.grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
 
-.card { background: #ffffff; color: #1e293b; border-radius: 20px; padding: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-top: 10px solid #cbd5e1; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-.card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(46, 204, 113, 0.2); }
-.card-lagomorfos { border-top-color: #27ae60; }
-.card-bioterio { border-top-color: #16a085; }
-.card-etologia { border-top-color: #1b5e20; }
-.card-cursos { border-top-color: #f39c12; }
-.card-azul { border-top-color: #3498db; }
-.card-roja { border-top-color: #c0392b; }
+@media (min-width: 768px) {
+    .grid-servicios { grid-template-columns: repeat(3, 1fr); } /* Mosaico exacto de 3 columnas */
+}
 
-/* --- BOTONES OPTIMIZADOS --- */
-.flex-btn { margin-top: auto; padding-top: 30px; display: flex; justify-content: center; }
-.btn { width: 100%; max-width: 280px; padding: 15px; border-radius: 12px; text-decoration: none; color: white; font-weight: 800; text-align: center; font-size: 1rem; text-transform: uppercase; }
-.btn-azul { background: linear-gradient(135deg, #3498db, #2980b9); }
-.btn-yt { background: linear-gradient(135deg, #e74c3c, #c0392b); }
-
-/* WSP CON TEXTO NEGRO */
-.btn-wa { display: block; max-width: 350px; margin: 50px auto; background: #2ecc71; color: #0f172a !important; padding: 20px; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 900; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(46, 204, 113, 0.4); }
-
-/* --- BLOG Y ARTÍCULOS --- */
-.header-blog { background: #1e293b; padding: 25px; display: flex; align-items: center; border-bottom: 4px solid #2ecc71; position: sticky; top: 0; z-index: 100; }
-.btn-regresar-minimal { color: #f39c12; border: 2px solid #f39c12; padding: 10px 20px; text-decoration: none; border-radius: 10px; font-weight: 900; font-size: 0.9rem; background: rgba(243, 156, 18, 0.1); }
-.post-completo { background: white; color: #1e293
+.card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; border-top: 8px solid #cbd5e1
