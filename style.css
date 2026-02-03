@@ -1,5 +1,5 @@
 /* ==========================================
-   CSS COSMOS 4.0 – VETERINARY RIGOR
+   CSS COSMOS 4.0 – VETERINARY EDITION
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -17,14 +17,42 @@ body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; l
 .animal { color: #2ecc71; font-weight: 700; } /* VERDE OFICIAL */
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
+
+/* TAGLINE EN VERDE */
 .tagline { margin-top: 8px; color: #2ecc71; font-weight: bold; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
 
-/* --- GRID DE MOSAICOS (CORREGIDO) --- */
+/* --- GRID DE MOSAICOS (3 COLUMNAS EN PC) --- */
 .contenedor-principal { width: 95%; max-width: 1100px; margin: 40px auto; }
 .grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
 
 @media (min-width: 768px) {
-    .grid-servicios { grid-template-columns: repeat(3, 1fr); } /* Mosaico exacto de 3 columnas */
+    .grid-servicios { grid-template-columns: repeat(3, 1fr); }
 }
 
-.card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; border-top: 8px solid #cbd5e1
+.card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; border-top: 8px solid #cbd5e1; transition: 0.3s; height: 100%; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(46, 204, 113, 0.15); }
+.card-lagomorfos { border-top-color: #27ae60; }
+.card-bioterio { border-top-color: #16a085; }
+.card-etologia { border-top-color: #1b5e20; }
+.card-cursos { border-top-color: #f39c12; }
+.card-azul { border-top-color: #3498db; }
+.card-roja { border-top-color: #c0392b; }
+
+/* --- BOTONES SIN DEFORMACIÓN --- */
+.flex-btn { margin-top: auto; padding-top: 25px; display: flex; justify-content: center; }
+.btn { width: 100%; max-width: 240px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; text-align: center; text-transform: uppercase; font-size: 0.9rem; }
+.btn-azul { background: #3498db; }
+.btn-yt { background: #c0392b; }
+
+/* WHATSAPP: TEXTO NEGRO SOBRE VERDE */
+.btn-wa { display: block; max-width: 320px; margin: 50px auto; background: #2ecc71; color: #000 !important; padding: 18px; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 900; font-size: 1.1rem; box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3); }
+
+/* --- NAVEGACIÓN MÓVIL OPTIMIZADA --- */
+.header-blog { background: #1a2a3a; padding: 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 3px solid #2ecc71; }
+.btn-regresar-minimal { color: #f39c12; border: 2px solid #f39c12; padding: 10px 20px; text-decoration: none; border-radius: 10px; font-weight: 900; font-size: 0.85rem; background: rgba(243, 156, 18, 0.05); }
+
+.post-completo { background: white; padding: 45px 35px; border-radius: 15px; box-shadow: 0 4px 25px rgba(0,0,0,0.06); }
+.capsula-antagonismo { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 15px; padding: 25px; margin: 35px 0; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+@media (min-width: 650px) { .capsula-antagonismo { flex-direction: row; justify-content: space-around; } }
+
+.main-footer { background: #1a2a3a; padding: 45px 20px; text-align: center; color: #94a3b8; font-size: 0.85rem; }
