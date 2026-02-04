@@ -1,43 +1,38 @@
 /* ==========================================
-   CSS COSMOS v18.0 – IDENTIDAD Y NEÓN
+   CSS COSMOS v19.0 – BLINDAJE DE ARMONÍA
    ========================================== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
 .content-wrap { flex: 1; }
 .text-justify { text-align: justify !important; text-justify: inter-word !important; }
 
-/* --- MARCA AnimalMenteTV --- */
+/* --- IDENTIDAD VISUAL --- */
 .animal-plano { color: #2ecc71; font-weight: 700; }
-.animal-radiante { color: #2ecc71; font-weight: 700; text-shadow: 0 0 8px rgba(46, 204, 113, 0.4); }
+.animal-radiante { color: #2ecc71; font-weight: 700; text-shadow: 0 0 10px rgba(46, 204, 113, 0.5); }
 .mente { color: #ffffff; font-weight: 400; }
 .tv { color: #3498db; font-weight: 300; font-style: italic; }
 
-/* --- HEADER PORTADA --- */
-.main-header { background: #1a2a3a; color: white; text-align: center; padding: 60px 20px; border-bottom: 5px solid #2ecc71; }
-.logo-img-header { width: 85px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 0 20px #2ecc71; }
-.tagline-main { color: #2ecc71; font-weight: 800; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
-
-/* --- HEADER SUB-PÁGINAS (SOLUCIÓN ANTI-DEFORMACIÓN) --- */
+/* --- HEADER SUB-PÁGINAS (SOLUCIÓN DE CENTRADO ABSOLUTO) --- */
 .header-sub { 
     background: #1a2a3a; 
     padding: 15px 20px; 
     display: flex; 
     align-items: center; 
-    justify-content: center; 
+    justify-content: center; /* Logo al centro matemático */
     position: relative; 
     border-bottom: 3px solid #2ecc71; 
     min-height: 75px;
 }
 .btn-regresar-minimal { 
-    position: absolute; 
-    left: 15px; 
+    position: absolute; /* Flota a la izquierda sin desplazar al logo */
+    left: 15px;
     color: #f39c12; 
     text-decoration: none; 
-    font-size: 0.7rem; 
+    font-size: 0.65rem; 
     font-weight: 900; 
     text-transform: uppercase; 
     border: 1.5px solid #f39c12; 
-    padding: 7px 12px; 
+    padding: 6px 10px; 
     border-radius: 6px; 
     white-space: nowrap;
     transition: none; 
@@ -45,5 +40,33 @@ body { font-family: 'Outfit', sans-serif; background: #f4f7f6; color: #1a202c; l
 .btn-regresar-minimal:active { 
     color: #39FF14 !important; 
     border-color: #39FF14 !important; 
-    box-shadow: 0 0 25px #39FF14; 
-    transform:
+    box-shadow: 0 0 15px #39FF14, 0 0 30px #39FF14; 
+    transform: scale(0.92); 
+}
+
+/* --- GRID Y PALETA DE COLORES (RESTAURADOS) --- */
+.contenedor-principal { width: 95%; max-width: 1100px; margin: 40px auto; }
+.grid-servicios { display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 768px) { .grid-servicios { grid-template-columns: repeat(3, 1fr); } }
+
+.card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; border-top: 8px solid #cbd5e1; height: 100%; }
+.card-lagomorfos { border-top-color: #27ae60; }
+.card-bioterio { border-top-color: #16a085; }
+.card-etologia { border-top-color: #1b5e20; }
+.card-cursos { border-top-color: #f39c12; }
+.card-azul { border-top-color: #3498db; }
+.card-roja { border-top-color: #c0392b; }
+
+/* --- BOTONES NEÓN DE ACCIÓN --- */
+.flex-btn { margin-top: auto; padding-top: 25px; display: flex; justify-content: center; }
+.btn-solid { width: 100%; max-width: 240px; padding: 12px; border-radius: 8px; text-decoration: none; color: white; font-weight: bold; text-align: center; transition: none; }
+
+.btn-blue { background: #3498db; }
+.btn-blue:active { background: #00D4FF; box-shadow: 0 0 20px #00D4FF, 0 0 40px #00D4FF; transform: scale(0.96); }
+
+.btn-red { background: #c0392b; }
+.btn-red:active { background: #FF0000; box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000; transform: scale(0.96); }
+
+/* FOOTER */
+.main-footer { background: #1a2a3a; padding: 50px 20px; text-align: center; color: #ffffff; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.1); line-height: 1.8; }
+.cc-link { color: #2ecc71; font-weight: bold; text-decoration: none; }
